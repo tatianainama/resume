@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Tati's resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tatianainama/resume.git"
+  },
+  "keywords": [
+    "resume"
+  ],
+  "author": "Tatiana Inama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatianainama/resume/issues"
+  },
+  "homepage": "https://github.com/tatianainama/resume#readme"
+}
