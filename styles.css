@@ -1,0 +1,43 @@
+body.ti-resume {
+  font-family: 'Lato', sans-serif;
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+}
+
+section.ti-intro {
+  display: flex;
+  justify-content: center;
+}
+
+.ti-intro-divisor {
+  width: 20%;
+}
+
+.ti-intro-personal,
+.ti-intro-about {
+  width: 40%;
+}
+
+.ti-intro-personal {
+  text-align: right;
+}
+
+.ti-intro-personal h1{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.ti-intro-personal small {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.ti-intro-about {
+  margin-top: 2rem;
+}
+
+.ti-intro-about h3 {
+  margin-top: 0;
+}
