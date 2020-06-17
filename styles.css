@@ -92,3 +92,29 @@ h4 {
 section div.project-description:nth-child(1) {
   padding-top: 0;
 }
+
+ul.ti-about-contact {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+}
+
+ul.ti-about-contact a {
+  display: inline;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: black;
+  line-height: 1rem;
+}
+
+ul.ti-about-contact a:hover {
+  border-bottom: 1px solid black;
+}
+
+object.logo {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  z-index: -1;
+}
