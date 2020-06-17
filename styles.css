@@ -1,6 +1,19 @@
-body.ti-resume {
+body {
   font-family: 'Lato', sans-serif;
-  padding: 2rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-image: url('./background-2.jpg');
+  background-position: center;
+  
+  background-size: cover;
+}
+
+.ti-resume {
+  padding: 0 4rem;
+  width: 60%;
+  background-color: white;
 }
 
 h1, h2, h3, h4, h5 {
@@ -10,34 +23,48 @@ h1, h2, h3, h4, h5 {
 section.ti-intro {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
+  align-items: center;
 }
 
-.ti-intro-divisor {
+.ti-intro-picture {
   width: 20%;
 }
 
-.ti-intro-personal,
-.ti-intro-about {
-  width: 40%;
+.ti-profile-picture {
+  width: 100%;
+  border-radius: 50%;
 }
 
-.ti-intro-personal {
-  text-align: right;
-}
-
-.ti-intro-personal h1{
+.ti-intro-about h1{
   font-size: 2rem;
-  margin-top: 2rem;
+  margin: 0;
 }
-.ti-intro-personal small {
+
+.ti-intro-about small {
   display: block;
   font-size: 1.2rem;
 }
 
 .ti-intro-about {
-  margin-top: 2rem;
+  width: 80%;
+  padding-left: 2rem;
 }
 
 .ti-intro-about h3 {
   margin-top: 0;
+}
+.ti-intro-about p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+.ti-intro-personal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ti-intro-personal address{
+  text-align: right;
 }
