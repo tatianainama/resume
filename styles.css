@@ -68,3 +68,27 @@ section.ti-intro {
 .ti-intro-personal address{
   text-align: right;
 }
+
+h3 {
+  text-transform: capitalize;
+  line-height: 2rem;
+  border-bottom: 2px solid;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.project-description {
+  padding: 1rem 0;
+  border-bottom: 1px solid grey;
+}
+
+.project-description:last-child {
+  border-bottom: 0;
+}
+
+section div.project-description:nth-child(1) {
+  padding-top: 0;
+}
