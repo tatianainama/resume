@@ -23,15 +23,18 @@ h1, h2, h3, h4, h5 {
 
 section {
   padding: 0 4rem;
+  margin: 2rem 0;
 }
 
-section.ti-intro {
+section.ti-intro,
+section.ti-footer {
   display: flex;
   justify-content: center;
   padding: 2rem 4rem;
   align-items: center;
   background-color: #161E21;
   color: #e0e2ce;
+  margin: 0;
 }
 
 .ti-intro-picture {
@@ -158,4 +161,9 @@ label {
 
 .repository-link span{
   font-size: 0.7rem;
+}
+
+section.ti-footer {
+  flex-direction: column;
+  color: #29372E;
 }
