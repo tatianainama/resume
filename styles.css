@@ -1,11 +1,15 @@
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #000;
+  background-color: #1B2727;
   display: flex;
   justify-content: center;
   margin: 0;
   background-image: url('./philodendron-bg.jpg');
   background-size: cover;
+}
+
+::selection {
+  background-color: #BE6E46;
 }
 
 .ti-resume {
@@ -92,6 +96,22 @@ h4 {
   border-bottom: 0;
 }
 
+.project-description h4 a,
+.project-description h4 a:visited,
+.project-description h4 a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-description h4 a:hover {
+  color: #BE6E46;
+  border-bottom: 1px solid #BE6E46;
+}
+
+.project-description h4 small {
+  display: block;
+}
+
 section div.project-description:nth-child(1) {
   padding-top: 0;
 }
@@ -112,7 +132,8 @@ ul.ti-about-contact a {
 }
 
 ul.ti-about-contact a:hover {
-  border-bottom: 1px solid #e0e2ce;
+  color: #BE6E46;
+  border-bottom: 1px solid #BE6E46;
 }
 
 object.logo {
@@ -123,7 +144,14 @@ object.logo {
   filter: invert(91%) sepia(13%) saturate(233%) hue-rotate(26deg) brightness(104%) contrast(82%);
 }
 
-object.logo:hover, 
-object.logo:visited {
-  filter: invert(91%) sepia(13%) saturate(233%) hue-rotate(26deg) brightness(104%) contrast(82%);
+ul.ti-about-contact a:hover object.logo, 
+ul.ti-about-contact a:visited object.logo {
+  filter: invert(45%) sepia(72%) saturate(402%) hue-rotate(335deg) brightness(92%) contrast(88%);
+}
+
+label {
+  background-color: #E4C4B4;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 2px;
 }
