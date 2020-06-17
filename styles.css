@@ -1,18 +1,15 @@
 body {
   font-family: 'Lato', sans-serif;
-  background-color: black;
+  background-color: #000;
   display: flex;
   justify-content: center;
   margin: 0;
-  background-image: url('./background-2.jpg');
-  background-position: center;
-  
+  background-image: url('./philodendron-bg.jpg');
   background-size: cover;
 }
 
 .ti-resume {
-  padding: 0 4rem;
-  width: 60%;
+  width: 80%;
   background-color: white;
 }
 
@@ -20,11 +17,17 @@ h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
 }
 
+section {
+  padding: 0 4rem;
+}
+
 section.ti-intro {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding: 2rem 4rem;
   align-items: center;
+  background-color: #161E21;
+  color: #e0e2ce;
 }
 
 .ti-intro-picture {
@@ -104,12 +107,12 @@ ul.ti-about-contact a {
   position: relative;
   z-index: 1;
   text-decoration: none;
-  color: black;
+  color: #e0e2ce;
   line-height: 1rem;
 }
 
 ul.ti-about-contact a:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e0e2ce;
 }
 
 object.logo {
@@ -117,4 +120,10 @@ object.logo {
   height: 1rem;
   position: relative;
   z-index: -1;
+  filter: invert(91%) sepia(13%) saturate(233%) hue-rotate(26deg) brightness(104%) contrast(82%);
+}
+
+object.logo:hover, 
+object.logo:visited {
+  filter: invert(91%) sepia(13%) saturate(233%) hue-rotate(26deg) brightness(104%) contrast(82%);
 }
