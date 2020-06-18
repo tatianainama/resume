@@ -1,8 +1,7 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "Tati's resume",
-  "main": "index.js",
+  "description": "Tatiana Inama's resume",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Roboto Slab';
-  src: url('./static/RobotoSlab-Bold.ttf');
+  src: url('../static/RobotoSlab-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url('./static/Lato-Regular.ttf')
+  src: url('../static/Lato-Regular.ttf')
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-image: url('./philodendron-bg.jpg');
+  background-image: url('../images/philodendron-bg.jpg');
   background-size: cover;
 }
 
@@ -196,7 +196,7 @@ section.ti-footer {
   }
 
   section.ti-intro {
-    background-image: url('./philodendron-bg.jpg');
+    background-image: url('../images/philodendron-bg.jpg');
     background-size: cover;
     flex-direction: column;
     padding: 1rem 2rem;
