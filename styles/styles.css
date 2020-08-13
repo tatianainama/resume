@@ -121,7 +121,8 @@ h4 {
   border-bottom: 1px solid #BE6E46;
 }
 
-.project-description h4 small {
+.project-description h4 small,
+.education-description h4 small {
   display: block;
 }
 
