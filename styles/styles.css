@@ -192,6 +192,7 @@ ul.ti-about-contact a:hover {
 ul.ti-about-contact a#download-link:hover {
   border: 1px solid;
 }
+
 svg {
   fill: #e0e2ce;
   width: 1rem;
