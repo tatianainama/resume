@@ -287,9 +287,22 @@ section.ti-footer {
 
 @media print {
   body {
-    background-image: none;
-    background-color: white;
+    background: none;
   }
+  .ti-resume {
+    width: 100%;
+    box-shadow: none;
+    border: 0;
+  }
+  
+  .ti-main-content section:not(:first-child) {
+    page-break-before: always;
+  }
+
+  .ti-main-content section:last-child {
+    page-break-before: avoid;
+  }
+
   section.ti-footer,
   #download-link {
     display: none;

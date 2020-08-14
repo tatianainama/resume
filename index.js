@@ -12,7 +12,7 @@ const run = async () => {
     renderDelay: 10000,
     pdf: {
       printBackground: true,
-      format: 'A3'
+      width: '1024px'
     }
   })
 
