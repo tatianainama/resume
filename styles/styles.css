@@ -5,6 +5,7 @@ html {
 @font-face {
   font-family: 'Roboto Slab';
   src: url('../static/RobotoSlab-Bold.ttf');
+  font-weight: 500;
 }
 
 @font-face {
@@ -51,6 +52,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
+  font-weight: 500;
 }
 
 section {
