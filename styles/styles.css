@@ -18,8 +18,20 @@ body {
   background-size: cover;
 }
 
+a {
+  color: #BE6E46;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+a:visited,
+a:hover {
+  color: #99593a;
+}
+
 ::selection {
   background-color: #BE6E46;
+  color: white;
 }
 
 .ti-resume {
@@ -36,6 +48,9 @@ section {
   margin: 2rem 0;
 }
 
+.ti-main-content {
+  margin: 2rem 0;
+}
 section.ti-intro,
 section.ti-footer {
   display: flex;
@@ -93,7 +108,7 @@ h3 {
   text-transform: capitalize;
   line-height: 2rem;
   border-bottom: 2px solid;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h4 {
@@ -114,6 +129,7 @@ h4 {
 .project-description h4 a:focus {
   text-decoration: none;
   color: #000;
+  border-bottom: 0;
 }
 
 .project-description h4 a:hover {
@@ -289,5 +305,14 @@ section.ti-footer {
 
   .project-description {
     break-inside: avoid;
+  }
+}
+
+@media only screen and (max-width:376px) {
+  section {
+    padding: 1rem;
+  }
+  .ti-main-content {
+    margin: 0 0 1rem ;
   }
 }
