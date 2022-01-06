@@ -233,7 +233,7 @@ section.ti-footer {
     margin: 0;
   }
 
-  section.ti-intro {
+  header.ti-intro {
     background-image: url('../images/philodendron-bg.jpg');
     background-size: cover;
     flex-direction: column;
@@ -242,18 +242,18 @@ section.ti-footer {
 
   .ti-intro-about {
     background-color: #161E21;
-    padding: 0 1rem;
+    padding: 1rem;
     width: 100%;
   }
 
   .ti-intro-picture {
-    width: 60%;
+    display: none;
   }
 
   .ti-intro-personal {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
   }
 
   ul.ti-about-contact {
@@ -262,11 +262,12 @@ section.ti-footer {
 
   ul.ti-about-contact--mobile {
     display: flex;
-    margin: 0.5rem 0;
+    flex-wrap: wrap;
+    margin: 0rem -0.5rem;
   }
 
   ul.ti-about-contact--mobile li {
-    margin: 0 0.5rem;
+    margin: 0.5rem;
   }
 
   .ti-intro-about p {
@@ -280,5 +281,59 @@ section.ti-footer {
   }
   .ti-main-content {
     margin: 0 0 1rem ;
+  }
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+    background: none;
+  }
+
+  .ti-intro {
+    padding: 0;
+  }
+
+  .ti-intro-picture {
+    display: none;
+  }
+
+  .ti-intro-about {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .ti-main-content section {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .ti-resume {
+    width: 100%;
+    box-shadow: none;
+    border: 0;
+  }
+
+  .ti-main-content {
+    margin-top: 0;
+  }
+
+  .ti-main-content section:last-child {
+    page-break-before: avoid;
+  }
+
+  a.printable-link:link:after,
+  a.printable-link:visited:after {
+    font-size: 10pt;
+    content: " [ " attr(href) " ] ";
+  }
+
+  .project-description {
+    padding: 0.25rem 0;
+  }
+
+  footer.ti-footer,
+  #download-link {
+    display: none;
   }
 }
